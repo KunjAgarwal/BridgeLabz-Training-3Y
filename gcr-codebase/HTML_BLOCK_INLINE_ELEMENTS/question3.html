@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Registration</title>
+</head>
+
+<body>
+
+    <h1>Course Registration Form</h1>
+
+    <!-- Registration Form -->
+    <form>
+
+        <!-- Grouping student information -->
+        <fieldset>
+
+            <legend>Student Information</legend>
+
+            <!-- Name -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+
+            <br><br>
+
+            <!-- Email -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+
+            <br><br>
+
+            <!-- Course Selection -->
+            <label for="course">Select Course:</label>
+
+            <select id="course" name="course">
+                <option value="java">Java</option>
+                <option value="python">Python</option>
+                <option value="cloud">Cloud Computing</option>
+                <option value="web">Web Development</option>
+            </select>
+
+            <br><br>
+
+            <!-- Submit Button -->
+            <input type="submit" value="Register">
+
+        </fieldset>
+
+    </form>
+
+    <br>
+
+    <!-- Available Course Schedules -->
+    <h2>Available Course Schedules</h2>
+
+    <table border="1">
+
+        <tr>
+            <th>Day</th>
+            <th>Time</th>
+            <th>Instructor</th>
+        </tr>
+
+        <tr>
+            <td>Monday</td>
+            <td>10:00 AM - 12:00 PM</td>
+            <td>Mr. Sharma</td>
+        </tr>
+
+        <tr>
+            <td>Wednesday</td>
+            <td>12:00 PM - 2:00 PM</td>
+            <td>Ms. Priya</td>
+        </tr>
+
+        <tr>
+            <td>Friday</td>
+            <td>2:00 PM - 4:00 PM</td>
+            <td>Mr. Kumar</td>
+        </tr>
+
+    </table>
+
+</body>
+
+</html>
