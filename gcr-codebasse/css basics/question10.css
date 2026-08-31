@@ -1,0 +1,220 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f7;
+    color: #222;
+}
+
+/* Sticky header */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px 40px;
+
+    background-color: rgba(23, 32, 42, 0.95);
+    color: white;
+
+    outline: 3px solid #2874a6;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+/* Hero section */
+.hero {
+    position: relative;
+
+    min-height: 500px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+        ),
+        url("https://picsum.photos/1600/800");
+
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+}
+
+.hero-content {
+    position: absolute;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 50px;
+    margin: 10px;
+}
+
+.hero p {
+    font-size: 22px;
+}
+
+/* About section */
+.about {
+    min-height: 400px;
+    padding: 70px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: #d6eaf8;
+}
+
+.about div {
+    width: 45%;
+}
+
+.about img {
+    width: 400px;
+    max-width: 45%;
+    border-radius: 15px;
+    border: 8px solid white;
+}
+
+/* Services */
+#services {
+    padding: 70px 40px;
+    text-align: center;
+}
+
+.services {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.services article {
+    position: relative;
+
+    flex: 1;
+    max-width: 300px;
+
+    padding: 30px;
+
+    background: linear-gradient(
+        135deg,
+        #ffffff,
+        #d5f5e3
+    );
+
+    border: 3px solid #2874a6;
+    border-radius: 15px;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.services article:nth-child(2) {
+    top: 20px;
+}
+
+/* Contact */
+.contact {
+    padding: 70px 20px;
+    text-align: center;
+    background-color: #fdebd0;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact input,
+.contact textarea {
+    padding: 15px;
+    border: 2px solid #aaa;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.contact button {
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #2874a6;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background-color: #1b4f72;
+}
+
+/* Footer */
+footer {
+    padding: 25px;
+    text-align: center;
+    background-color: #17202a;
+    color: white;
+}
+
+/* Responsive layout */
+@media (max-width: 700px) {
+
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .about {
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+
+    .about div {
+        width: 100%;
+    }
+
+    .about img {
+        max-width: 100%;
+        margin-top: 25px;
+    }
+
+    .services {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .services article {
+        width: 100%;
+    }
+
+    .services article:nth-child(2) {
+        top: 0;
+    }
+
+    .hero h2 {
+        font-size: 35px;
+    }
+}

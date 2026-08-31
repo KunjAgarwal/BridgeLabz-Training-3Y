@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #1b2631;
+    color: white;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+}
+
+section {
+    min-height: 400px;
+    padding: 80px;
+    margin: 20px 0;
+    border: 5px solid white;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Different gradients */
+#history {
+    background: linear-gradient(135deg, #fdebd0, #f5cba7);
+}
+
+#places {
+    background: linear-gradient(135deg, #d6eaf8, #aed6f1);
+}
+
+#culture {
+    background: linear-gradient(135deg, #d5f5e3, #a9dfbf);
+}
+
+/* Parallax-like fixed background */
+#history,
+#places {
+    background-attachment: fixed;
+}
+
+section h2 {
+    font-size: 38px;
+    font-weight: 700;
+}
+
+section p {
+    max-width: 700px;
+    font-size: 20px;
+    line-height: 1.7;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background-color: #1b2631;
+    color: white;
+}
