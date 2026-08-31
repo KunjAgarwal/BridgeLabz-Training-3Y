@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Secure Form</title>
+</head>
+<body>
+
+    <h1>Secure Form</h1>
+
+    <form autocomplete="off">
+
+        <label for="username">Username:</label>
+        <input
+            type="text"
+            id="username"
+            name="username"
+            required>
+
+        <br><br>
+
+        <label for="password">Password:</label>
+        <input
+            type="password"
+            id="password"
+            name="password"
+            required>
+
+        <br><br>
+
+        <input type="submit" value="Login">
+
+    </form>
+
+    <p>
+        Autocomplete is disabled to reduce the chance of sensitive
+        information being automatically stored or displayed by the browser.
+    </p>
+
+</body>
+</html>
