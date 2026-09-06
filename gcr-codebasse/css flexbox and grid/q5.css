@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 40px;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.pricing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.card {
+    width: 280px;
+    padding: 35px 25px;
+    text-align: center;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px #ccc;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.popular {
+    transform: scale(1.08);
+    background-color: #dff0ff;
+}
+
+.popular:hover {
+    transform: scale(1.08) translateY(-10px);
+}
+
+.card h3 {
+    font-size: 28px;
+}
+
+button {
+    border: none;
+    padding: 12px 20px;
+    background-color: #222;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+@media (max-width: 750px) {
+    .pricing {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .popular {
+        transform: none;
+    }
+
+    .popular:hover {
+        transform: translateY(-10px);
+    }
+}
