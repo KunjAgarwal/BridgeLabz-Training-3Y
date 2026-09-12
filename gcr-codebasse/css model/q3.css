@@ -1,0 +1,18 @@
+* { box-sizing: border-box; }
+html, body { margin: 0; font-family: Arial, sans-serif; }
+header, footer { text-align: center; padding: 22px; }
+.gradient {
+    min-height: 45vh;
+    padding: 80px 10%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.linear {
+    background: linear-gradient(120deg, #2563eb, #7c3aed, #ec4899);
+    background-attachment: fixed;
+}
+.radial {
+    background: radial-gradient(circle, #22c55e, #0f766e, #064e3b);
+}

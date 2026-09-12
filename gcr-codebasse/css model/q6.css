@@ -1,0 +1,26 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; background: #f8fafc; }
+header { text-align: center; padding: 30px; }
+.transform-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 55px;
+    flex-wrap: wrap;
+    padding: 50px 20px;
+}
+.transform-item { text-align: center; }
+.box {
+    width: 130px;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    background: #c7d2fe;
+    transition: all 0.4s ease;
+}
+.rotate:hover { transform: rotate(25deg); }
+.scale:hover { transform: scale(1.25); }
+.translate:hover { transform: translate(25px, -20px); }
+.skew:hover { transform: skew(15deg, 8deg); }
