@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #182033;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    text-align: center;
+    padding: 24px;
+    background: #172554;
+    color: white;
+}
+
+header p {
+    margin-top: 8px;
+    color: #dbeafe;
+}
+
+.examples {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    flex-wrap: wrap;
+    padding: 35px;
+}
+
+.demo {
+    width: 230px;
+    min-height: 220px;
+    background: white;
+    padding: 22px;
+    border-radius: 14px;
+    box-shadow: 0 8px 22px #0001;
+    text-align: center;
+}
+
+.demo h2 {
+    margin-bottom: 18px;
+}
+
+.demo p {
+    margin-top: 16px;
+    line-height: 1.5;
+    color: #596579;
+}
+
+a {
+    display: inline-block;
+    padding: 10px 15px;
+    color: #2563eb;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+a:hover {
+    background: #2563eb;
+    color: white;
+}
+
+.demo input {
+    width: 100%;
+    padding: 11px;
+    border: 2px solid #cbd5e1;
+    border-radius: 8px;
+    outline: none;
+}
+
+.demo input:focus {
+    border-color: #7c3aed;
+    box-shadow: 0 0 0 3px #7c3aed22;
+}
+
+.demo button {
+    padding: 11px 18px;
+    border: 0;
+    border-radius: 8px;
+    background: #16a34a;
+    color: white;
+    cursor: pointer;
+}
+
+.demo button:active {
+    transform: scale(0.94);
+    background: #15803d;
+}
+
+/* :nth-child() pseudo-class */
+.demo ul {
+    list-style: none;
+    text-align: left;
+}
+
+.demo li {
+    padding: 8px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.demo li:nth-child(3) {
+    background: #f59e0b;
+    color: white;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 24px;
+    background: #172554;
+    color: white;
+}
+
+/* Responsive design */
+@media (max-width: 700px) {
+    .examples {
+        flex-direction: column;
+    }
+
+    .demo {
+        width: min(90%, 360px);
+    }
+}

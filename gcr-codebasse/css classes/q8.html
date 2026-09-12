@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Box-Sizing Comparison</title><link rel="stylesheet" href="q8.css">
+</head>
+<body>
+<header><h1>Box-Sizing Comparison</h1></header>
+<main>
+<section class="comparison">
+<article class="box default"><h2>Default</h2><p>content-box</p><small>Width 300px + padding 30px = total width 360px.</small></article>
+<article class="box border"><h2>Border Box</h2><p>box-sizing: border-box</p><small>Width 300px includes padding and border.</small></article>
+</section>
+<p class="note">With <strong>content-box</strong>, declared width applies only to content. With <strong>border-box</strong>, padding and border are included inside the declared width.</p>
+</main>
+<footer><p>Understanding CSS box-sizing</p></footer>
+</body>
+</html>

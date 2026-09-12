@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: #f1f5f9;
+    color: #172033;
+}
+
+header {
+    background: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 22px;
+}
+
+header p {
+    margin: 8px 0 0;
+    color: #cbd5e1;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.card {
+    width: min(900px, 95%);
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 18px;
+    box-shadow: 0 15px 35px #0002;
+    padding: 30px;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.form-side {
+    flex: 1;
+}
+
+.content img {
+    width: 42%;
+    max-width: 360px;
+    border-radius: 14px;
+    box-shadow: 0 7px 18px #0002;
+}
+
+.form-side h2 {
+    margin-top: 0;
+}
+
+.form-side p {
+    color: #64748b;
+}
+
+.form-side form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-side input {
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.form-side input:focus {
+    outline: 3px solid #bfdbfe;
+    border-color: #2563eb;
+}
+
+.actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 8px;
+}
+
+.actions button {
+    padding: 12px 20px;
+    border: 0;
+    border-radius: 8px;
+    background: #2563eb;
+    color: white;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.actions .secondary {
+    background: #64748b;
+}
+
+.actions button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px #0002;
+}
+
+.actions button:active {
+    transform: scale(0.96);
+}
+
+footer {
+    background: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 22px;
+}
+
+@media (max-width: 700px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .content img {
+        width: 100%;
+        max-width: none;
+    }
+
+    .card {
+        padding: 22px;
+    }
+}

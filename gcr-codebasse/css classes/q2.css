@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: #eef2ff;
+    color: #172554;
+}
+
+header {
+    text-align: center;
+    background: #312e81;
+    color: white;
+    padding: 24px;
+}
+
+header p {
+    margin-top: 8px;
+    color: #ddd6fe;
+}
+
+.tooltip-area {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 55px;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.tip {
+    position: relative;
+    background: white;
+    padding: 18px 28px;
+    border-radius: 12px;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 0 7px 20px #0002;
+    cursor: pointer;
+}
+
+.tooltip {
+    position: absolute;
+    bottom: calc(100% + 12px);
+    left: 50%;
+    transform: translateX(-50%);
+    width: 190px;
+    padding: 10px;
+    background: #111827;
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: normal;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.tooltip::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    border: 7px solid transparent;
+    border-top-color: #111827;
+}
+
+.tip:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+}
+
+footer {
+    text-align: center;
+    background: #312e81;
+    color: white;
+    padding: 24px;
+}
+
+@media (max-width: 700px) {
+    .tooltip-area {
+        gap: 35px;
+    }
+}
