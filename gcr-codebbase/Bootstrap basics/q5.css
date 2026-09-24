@@ -1,0 +1,32 @@
+/* Custom blog header */
+.blog-header {
+    background: linear-gradient(
+        135deg,
+        #141e30,
+        #243b55
+    );
+}
+
+/* Blog article cards */
+.blog-card {
+    border: none;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+
+/* Card hover effect */
+.blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Article images */
+.blog-card img {
+    height: 280px;
+    object-fit: cover;
+}
+
+/* Sidebar cards */
+aside .card {
+    border: none;
+}

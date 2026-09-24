@@ -1,0 +1,41 @@
+/* Hero background */
+.hero-section {
+    min-height: 75vh;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.55),
+            rgba(0, 0, 0, 0.55)
+        ),
+        url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1600");
+
+    background-size: cover;
+    background-position: center;
+}
+
+/* Destination cards */
+.destination-card {
+    border: none;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+
+.destination-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Destination images */
+.destination-card img {
+    height: 220px;
+    object-fit: cover;
+}
+
+/* Hero buttons */
+.hero-section .btn {
+    transition: 0.3s ease;
+}
+
+.hero-section .btn:hover {
+    transform: translateY(-2px);
+}

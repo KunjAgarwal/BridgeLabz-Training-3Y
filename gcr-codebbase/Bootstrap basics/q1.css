@@ -1,0 +1,20 @@
+/* Hero section styling */
+.hero-section {
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #e3f2fd, #ffffff);
+}
+
+/* Service cards */
+.service-card {
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+/* Hover effect */
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
