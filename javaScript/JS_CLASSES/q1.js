@@ -9,6 +9,7 @@ class Product {
     this.category = category;
   }
 
+  
   applyDiscount(percent) {
     if (!Number.isFinite(percent) || percent < 0 || percent > 100) {
       throw new RangeError("Discount must be between 0 and 100.");
