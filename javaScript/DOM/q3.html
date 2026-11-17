@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Q3 - Multi-Step Form</title>
+  <style>
+    body { font-family: sans-serif; max-width: 400px; margin: 40px auto; }
+    .step { display: none; }
+    .step.active { display: block; }
+    input { width: 100%; padding: 8px; margin: 8px 0; box-sizing: border-box; }
+    .error { color: red; font-size: 13px; min-height: 18px; }
+    .nav-btns { display: flex; justify-content: space-between; margin-top: 16px; }
+    button { padding: 8px 16px; cursor: pointer; }
+    #summaryBox { display: none; border: 1px solid #4caf50; background: #f1f8e9; padding: 15px; border-radius: 5px; }
+  </style>
+</head>
+<body>
+  <h2>Registration Wizard</h2>
+
+  <form id="multiStepForm">
+    <div class="step active" data-step="0">
+      <label for="nameInput">Step 1: Full Name</label>
+      <input type="text" id="nameInput" placeholder="Enter your name" />
+      <div class="error" id="error-0"></div>
+    </div>
+
+    <div class="step" data-step="1">
+      <label for="emailInput">Step 2: Email Address</label>
+      <input type="email" id="emailInput" placeholder="Enter your email" />
+      <div class="error" id="error-1"></div>
+    </div>
+
+    <div class="step" data-step="2">
+      <label for="passwordInput">Step 3: Password (min 6 characters)</label>
+      <input type="password" id="passwordInput" placeholder="Enter your password" />
+      <div class="error" id="error-2"></div>
+    </div>
+
+    <div class="nav-btns" id="navControls">
+      <button type="button" id="backBtn" disabled>Back</button>
+      <button type="button" id="nextBtn">Next</button>
+    </div>
+  </form>
+
+  <div id="summaryBox"></div>
+
+  <script src="q3.js"></script>
+</body>
+</html>

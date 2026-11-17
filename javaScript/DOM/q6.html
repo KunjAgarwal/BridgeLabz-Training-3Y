@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Q6 - Real-Time Table Filter</title>
+  <style>
+    body { font-family: sans-serif; max-width: 600px; margin: 40px auto; }
+    input { width: 100%; padding: 10px; margin-bottom: 16px; box-sizing: border-box; font-size: 15px; }
+    table { width: 100%; border-collapse: collapse; }
+    th, td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+    th { background: #f4f4f4; }
+    #noResults { display: none; text-align: center; font-weight: bold; color: #666; padding: 16px; }
+  </style>
+</head>
+<body>
+  <h2>Student Directory Search</h2>
+  <input type="text" id="searchInput" placeholder="Search by Name, Branch, or CGPA..." />
+
+  <table id="studentTable">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Branch</th>
+        <th>CGPA</th>
+      </tr>
+    </thead>
+    <tbody id="studentTableBody">
+      <tr><td>Kunj Agarwal</td><td>CSE</td><td>9.1</td></tr>
+      <tr><td>Kushagra Agarwal</td><td>CSE</td><td>8.8</td></tr>
+      <tr><td>Mohit Chauhan</td><td>IT</td><td>8.5</td></tr>
+      <tr><td>Kavya Gupta</td><td>ECE</td><td>9.3</td></tr>
+      <tr><td>Rohan Verma</td><td>Mechanical</td><td>8.2</td></tr>
+    </tbody>
+  </table>
+
+  <div id="noResults">No results found</div>
+
+  <script src="q6.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Q7 - Mouse Path & Coordinates Logger</title>
+  <style>
+    body { font-family: sans-serif; margin: 40px; }
+    #trackingBox {
+      width: 400px;
+      height: 400px;
+      border: 2px solid #333;
+      background: #fafafa;
+      position: relative;
+      cursor: crosshair;
+      user-select: none;
+    }
+    .red-dot {
+      width: 10px;
+      height: 10px;
+      background-color: red;
+      border-radius: 50%;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+  <h2>Mouse Coordinates & Click Marker</h2>
+  <p id="coordsDisplay">Move mouse inside the 400x400 box (clientX: -, clientY: -)</p>
+  <div id="trackingBox"></div>
+
+  <script src="q7.js"></script>
+</body>
+</html>

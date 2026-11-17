@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Q8 - Custom Dropdown</title>
+  <style>
+    body { font-family: sans-serif; padding: 40px; }
+    .dropdown { position: relative; display: inline-block; width: 220px; }
+    .dropdown-btn { width: 100%; padding: 10px; text-align: left; cursor: pointer; background: #fff; border: 1px solid #888; }
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      margin: 2px 0 0;
+      padding: 0;
+      list-style: none;
+      border: 1px solid #888;
+      background: #fff;
+      box-sizing: border-box;
+    }
+    .dropdown-menu.open { display: block; }
+    .dropdown-menu li { padding: 10px; cursor: pointer; }
+    .dropdown-menu li:hover { background: #f0f0f0; }
+  </style>
+</head>
+<body>
+  <h2>Custom JavaScript Dropdown</h2>
+  <div class="dropdown" id="customDropdown">
+    <button type="button" class="dropdown-btn" id="dropdownToggleBtn">Select a Role ▼</button>
+    <ul class="dropdown-menu" id="dropdownOptions">
+      <li>Frontend Developer</li>
+      <li>Backend Developer</li>
+      <li>Full Stack Engineer</li>
+      <li>DevOps Specialist</li>
+    </ul>
+  </div>
+
+  <script src="q8.js"></script>
+</body>
+</html>
